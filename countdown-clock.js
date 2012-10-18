@@ -17,7 +17,7 @@ function Countdown(elem) {
     if (hour > 12) hour -= 12;
     var min = date.getMinutes();
     if (min < 10) min = "0" + String(min);
-    var ampm = date.getHours() > 11 ? "am" : "pm";
+    var ampm = date.getHours() > 11 ? "pm" : "am";
 
     return hour + ":" + min + ampm + " \u2014 "
          + days[date.getDay()]
