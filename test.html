@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="countdown-clock.js" type="text/javascript"></script>
+    <style type='text/css'>
+      #countdown .start {
+        font-family: sans-serif;
+        font-size: 14px;
+        text-align: center;
+        background: inherit;
+      }
+      #countdown table {
+        text-align: center;
+      }
+      #countdown td {
+        padding: 5px;
+        border-right: 1px solid #fff;
+      }
+
+      #countdown tr.units td,
+      #countdown tr.durations td {
+        background: #000;
+        color: #fff;
+      }
+      #countdown tr.durations td {
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 24px;
+        padding-bottom: 0;
+      }
+      #countdown tr.units td {
+        padding-top: 0;
+        font-family: sans-serif;
+        font-size: 9px;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="countdown">Sat Oct 19 2012 15:19:22 GMT-0500 (CDT)</span>
+    <script type="text/javascript">
+      new Countdown(document.getElementById("countdown"));
+    </script>
+  </body>
+</html>
