@@ -34,9 +34,9 @@ function Countdown(elem) {
     var durations = [];
 
     durations.push(Math.floor(s / DAY));
-    s = s % DAY;
+    s %= DAY;
     durations.push(Math.floor(s / HOUR));
-    s = s % HOUR;
+    s %= HOUR;
     durations.push(Math.floor(s / MIN));
     durations.push(s % MIN);
 
